@@ -108,6 +108,7 @@ body {
     padding-bottom: 10px;
     font-weight: bold;
     color: #434343;
+    word-spacing: 3px;
 }
 .social-icons {
     display: inline-block;
@@ -139,11 +140,12 @@ body {
     padding-bottom: 50px;
     padding-top: 50px;
 }
-#projects h1 {
+#projects .title-project {
     color: #3498db;
     padding-bottom: 20px;
     text-transform: uppercase;
     font-weight: bolder;
+    margin-bottom: 80px;
 }
 .title-project::before {
     content: '';
@@ -154,6 +156,54 @@ body {
     margin-left: auto;
     display: block;
     transform: translateY(63px);
+}
+.project1 {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.project1-text {
+    flex: 1;
+    text-align: left;
+    padding-left: 10px;
+}
+.project1-text h1 {
+    color: #3498db;
+    font-weight: bold;
+    padding: 25px 0px;
+}
+.project1-text p {
+    color: #bdc3c7;
+    font-weight: 600;
+    padding-top: 6px;
+    word-spacing: 5px;
+}
+
+#projects ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#projects li {
+    float: left;
+}
+
+#projects li a {
+    display: inline;
+    text-decoration: none;
+    margin-left: 45px;
+    color: #bdc3c7;
+    font-size: 17px;
+    font-weight: 500;
+}
+#projects li a:hover {
+    color: darkorange;
+}
+.project1-btn {
+    border:  2px solid #2980b9;
+    padding: 10px;
 }
 
 @media only screen and (max-width:767.5px) {
@@ -172,5 +222,58 @@ body {
         margin-left: auto;
         display: block;
         transform: translateY(10px);
+    }
+    .project1 {
+        display: block;
+    }
+    .project1-text {
+        text-align: center;
+    }
+    #projects  ul {
+        margin-top: 30px;
+        margin-left: 48px;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    #projects .title-project {
+        margin-bottom: 30px;
+    }
+    #projects ul {
+        margin: 101px;
+        display: inline;
+    }
+    .project1-logo img {
+        width: 210px;
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .project1-logo img {
+        width: 210px;
+    }
+    .get-started {
+        padding: 4px;
+    }
+    #projects li a {
+        font-size: none;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .project1-logo img {
+        width: 180px;
+    }
+    .get-started {
+        padding: 4px;
+        font-size: 12px;
+    }
+    #projects li a {
+        font-size: none;
+        margin-left: 30px;
+    }
+    .project1-btn {
+        padding: 4px;
     }
 }
