@@ -231,10 +231,12 @@ body {
 .con {
     margin-right: 30px;
     margin-bottom: 30px;
+    outline: none;
 }
 .con-msg {
     width: 80%;
     padding-bottom: 160px;
+    outline: none;
 }
 .con-send {
     margin-top: 50px;
@@ -243,6 +245,7 @@ body {
     border-radius: 20px;
     padding: 15px;
     font-weight: 600;
+    outline: none;
 }
 .con-send:hover {
     border-color: #434343;
@@ -284,7 +287,25 @@ body {
 
 
 
-
+@media only screen and (max-width: 1024px)  {
+   .con {
+    margin-bottom: 31px;
+   }
+}
+@media only screen and (max-width: 768px)  {
+    .con {
+     margin-bottom: 31px;
+     margin-left: 6px;
+    }
+    .con-msg {
+        margin-left: 6px;
+        margin-top: 2px;
+    }
+    .con-send {
+        margin-top: 35px;
+        margin-left: 6px;
+    }
+ }
 
 @media only screen and (max-width:767.5px) {
     .about{  
@@ -316,6 +337,9 @@ body {
 }
 
 @media only screen and (max-width:415px) {
+    #projects {
+        padding-bottom: 75px;
+    }
     #projects .title-project {
         margin-bottom: 30px;
     }
@@ -326,6 +350,19 @@ body {
     .project1-logo img {
         width: 210px;
     }
+    .contact {
+        display: inline-block;
+    }
+    .contact-form {
+        text-align: center;
+    }
+    .contact-details {
+        text-align: center;
+    }
+    .con {
+        margin-bottom: 33px;
+    }
+
 }
 
 @media only screen and (max-width:360px) {
