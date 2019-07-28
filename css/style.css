@@ -158,31 +158,42 @@ body {
     display: block;
     transform: translateY(63px);
 }
-.project1 {
+.project1, .project2 {
     display: flex;
     width: 90%;
     margin: auto;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    box-shadow: 2px 6px 3px #ffffff;
 }
-.project1-text {
+.project1-text, .project2-text {
     flex: 1;
-    text-align: left;
     padding-left: 10px;
 }
-.project1-text h1 {
+.project1-text {
+    padding-top: 30px;
+}
+.project1-text h1, .project2-text h1 {
     color: #3498db;
     font-weight: bold;
     padding: 25px 0px;
 }
-.project1-text p {
+.project1-text p, .project2-text p {
     color: #bdc3c7;
     font-weight: 600;
-    padding-top: 6px;
     word-spacing: 5px;
 }
-
+.project2-logo, .project1-logo {
+    flex : 1;
+}
+.project2-logo img {
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
 #projects ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0px 0px 0px 55px;
     padding: 20px;
     overflow: hidden;
 }
@@ -202,9 +213,12 @@ body {
 #projects li a:hover {
     color: darkorange;
 }
-.project1-btn {
+.project1-btn, .project2-btn {
     border:  2px solid #2980b9;
     padding: 10px;
+}
+.project2-logo ul li a:hover {
+    color: #F8A04E!important;
 }
 
 /*--Contact--*/
@@ -314,6 +328,9 @@ footer p {
         margin-top: 35px;
         margin-left: 6px;
     }
+    .project1-btn, .project2-btn {
+        padding: 0px;
+    }
  }
 
 @media only screen and (max-width:767.5px) {
@@ -333,11 +350,13 @@ footer p {
         display: block;
         transform: translateY(10px);
     }
-    .project1 {
+    .project1, .project2     {
         display: block;
+        padding-bottom: 60px;
     }
     .project1-text {
         text-align: center;
+        padding-top: 0px;
     }
     #projects  ul {
         margin-top: 30px;
@@ -374,7 +393,10 @@ footer p {
 
 }
 
-@media only screen and (max-width:360px) {
+@media only screen and (max-width:376px) {
+    #project li a {
+        margin-left: 30px;
+    }
     .project1-logo img {
         width: 210px;
     }
@@ -397,9 +419,9 @@ footer p {
     }
     #projects li a {
         font-size: none;
-        margin-left: 30px;
+        margin-left: 25px;
     }
-    .project1-btn {
+    .project1-btn, .project2-btn {
         padding: 4px;
     }
 }
